@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Home Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f2f5;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 300px;
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 22px;
+    }
+    .card p {
+      margin: 0 0 15px;
+      color: gray;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+    .buttons a, .buttons button {
+      text-decoration: none;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      flex: 1;
+      margin: 0 5px;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .linkedin { background: #0077b5; }
+    .github { background: #333; }
+    .about { background: #ff6600; }
+    .buttons a:hover, .buttons button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <!-- Home Page Card -->
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/256/219/219983.png" alt="Profile Image">
+    <h2>Harsh Singh</h2>
+    <p>Mern Stack Developer</p>
+    <div class="buttons">
+      <a href="https://www.linkedin.com/in/harshsingh1407/" target="_blank" class="linkedin">LinkedIn</a>
+      <a href="https://github.com/harshsingh1407" target="_blank" class="github">GitHub</a>
+      <button onclick="window.location.href='about.html'" class="about">About</button>
+    </div>
+  </div>
+</body>
+</html>
