@@ -34,17 +34,27 @@
     li {
       margin-bottom: 8px;
     }
-    .back-link {
-      display: inline-block;
-      margin-top: 20px;
+    .bottom-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+    .btn {
       padding: 10px 15px;
-      background: #0077b5;
-      color: #fff;
-      text-decoration: none;
       border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
       transition: 0.3s;
     }
-    .back-link:hover {
+    .back-link {
+      background: #0077b5;
+      color: #fff;
+    }
+    .contact-link {
+      background: #ff6600;
+      color: #fff;
+    }
+    .btn:hover {
       opacity: 0.85;
     }
   </style>
@@ -52,14 +62,14 @@
 <body>
   <div class="container">
     <h1>About Me</h1>
-    <p>Hello! I'm <strong>Harsh Singh</strong>, a passionate <em>Mern Stack Developer</em> who loves building modern and scalable web applications.  
+    <p>Hello! I'm <strong>John Doe</strong>, a passionate <em>Software Developer</em> who loves building modern and scalable web applications.  
     I enjoy exploring new technologies, solving real-world problems, and continuously learning to grow in my career.</p>
     
     <h2>Skills</h2>
     <ul>
       <li>Frontend: HTML, CSS, JavaScript, React</li>
       <li>Backend: Node.js, Express, MongoDB</li>
-      <li>Tools: Git, Postman, VS Code</li>
+      <li>Tools: Git, Docker, VS Code</li>
       <li>Agile Development & Team Collaboration</li>
     </ul>
     
@@ -69,18 +79,22 @@
       <li>Exploring new tech gadgets</li>
       <li>Reading about AI and Web Development</li>
       <li>Traveling & capturing photos</li>
-      <li>Listening Music & Watching Movies</li>
+      <li>Playing guitar and enjoying music</li>
     </ul>
     
     <h2>Contact</h2>
     <p>If you’d like to get in touch, feel free to connect with me:</p>
     <ul>
-      <li>Email: harshsingh95941@gmail.com</li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/harshsingh1407/" target="_blank">linkedin.com/in/harshsingh1407</a></li>
-      <li>GitHub: <a href="https://github.com/harshsingh1407" target="_blank">github.com/harshsingh1407</a></li>
+      <li>Email: johndoe@example.com</li>
+      <li>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/johndoe</a></li>
+      <li>GitHub: <a href="https://github.com" target="_blank">github.com/johndoe</a></li>
     </ul>
     
-    <a href="index.html" class="back-link">⬅ Back to Home</a>
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+      <a href="index.html" class="btn back-link">⬅ Back to Home</a>
+      <a href="contact.html" class="btn contact-link">Contact Us ➝</a>
+    </div>
   </div>
 </body>
 </html>
